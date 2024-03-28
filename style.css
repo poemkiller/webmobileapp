@@ -1,0 +1,262 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;
+}
+main {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+.system-info {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.typography h1, .typography h2 {
+    margin-bottom: 20px;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+.typography h3, .typography h4, .typography p {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+p {
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 18px;
+}
+
+button {
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+
+}
+.custom-button {
+    padding: 5px 10px;
+    border: 2px solid #000000;
+    color: #FFFFFF;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.custom-button:hover {
+    background-color: #111111;
+    color: #fff;
+    border: 2px solid #000000;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.colors {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.colors div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 50px;
+}
+
+.alerts {
+    margin-bottom: 50px;
+}
+.color-swatch {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 2px solid #000;
+}
+
+.primary-color-1 { background-color: #007BFF; }
+.primary-color-2 { background-color: #28A745; }
+.primary-color-3 { background-color: #343A40; }
+
+.secondary-color-1 { background-color: #17A2B8; }
+.secondary-color-2 { background-color: #FFC107; }
+.secondary-color-3 { background-color: #DC3545; }
+
+
+.alert {
+  margin-bottom: 0px;
+  font-family: "Reddit Mono", monospace;
+  font-weight: 800;
+  font-style: normal;
+  color: #000000;
+
+}
+
+
+.alert .close {
+  color: white;
+  text-shadow: none;
+  opacity: 1;
+}
+
+
+.alert-success {
+  background-color: #28a745;
+  padding-bottom: 10px;
+}
+
+.alert-success .alert-icon {
+  color: #28a745;
+}
+
+
+.alert-info {
+  background-color: #17a2b8;
+}
+
+.alert-info .alert-icon {
+  color: #17a2b8;
+}
+
+/* Warning alert */
+.alert-warning {
+  background-color: #ffc107;
+  color: #212529;
+  padding-bottom: 10px;
+}
+.alert-info {
+  padding-bottom: 10px;
+}
+.alert-warning .alert-icon {
+  color: #ffc107;
+}
+
+/* Danger alert */
+.alert-danger {
+  background-color: #dc3545;
+}
+
+.alert-danger .alert-icon {
+  color: #dc3545;
+}
+
+
+.alert-icon {
+  display: inline-block;
+  font-size: 24px;
+  margin-right: 0.5rem;
+  padding-left: 10px;
+}
+.alert-icon img {
+  width: 24px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.card {
+  margin-bottom: 20px;
+  font-family: "Reddit Mono", monospace;
+  font-weight: 200;
+  font-style: normal;
+
+}
+.card-text {
+  margin-bottom: 20px;
+  font-family: "Reddit Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+}
+.card-body {
+  margin-bottom: 20px;
+  font-family: "Reddit Mono", monospace;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Set the size of the carousel */
+.carousel {
+  width: 50%; /* Adjust the width as needed */
+  height: 300px;
+  padding-bottom: 100px;/* Adjust the height as needed */
+}
+
+/* Ensure the images fill the carousel */
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This will cover the area without stretching images */
+}
+
+.carousel-control-prev-icon {
+  color: #000000;
+}
+
+/* Change color of previous control icon */
+.carousel-control-prev-icon {
+    background-image: none !important; /* Remove the default background image */
+}
+
+.carousel-control-prev-icon::before {
+    content: '\2039'; /* Unicode character for a simple left-pointing angle */
+    font-size: 30px; /* Adjust size as necessary */
+    color: #000000; /* Replace with your desired color */
+}
+
+/* Change color of next control icon */
+.carousel-control-next-icon {
+    background-image: none !important; /* Remove the default background image */
+}
+
+.carousel-control-next-icon::before {
+    content: '\203A'; /* Unicode character for a simple right-pointing angle */
+    font-size: 30px; /* Adjust size as necessary */
+    color: #000000; /* Replace with your desired color */
+}
+
+.buttons {
+  align-items: center;
+}
+
+.navbar-brand {
+  margin-bottom: 20px;
+  font-family: "Reddit Mono", monospace;
+  font-weight: 200;
+  font-style: normal;
+}
+.nav-item {
+  margin-bottom: 20px;
+  font-family: "Reddit Mono", monospace;
+  font-weight: 200;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
